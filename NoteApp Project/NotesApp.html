@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/NoteApp/style.css">
+    <script src="./asset/NoteApp/app.js" defer></script>
+</head>
+<body>
+  
+<nav class="navbar navbar-warning navbar-expand-sm bg-warning fixed-top">
+<div class="container">
+    <a href="/" class="navbar-brand">
+    <i class="fas fa-blog"></i> &nbsp;
+    Notes App
+    </a>
+    <div class=row>
+        <div class="col-md-12">
+    <!-- <input type="search" class="form-control me-1"/> -->
+    <form class="d-flex"> <input class="form-control mr-3" type="search" id="Search" placeholder="Search" aria-label="Search">
+    </div>
+    </div>
+    <button class="btn bg-light" id="NavAddBtn">AddNotes</button>
+</div>
+</nav>
+<div class="container" id="Formdata" style="margin-top: 90px;">
+<div class="FormBorder" style="border: 2px solid gray;padding: 10px;border-radius: 10px;">
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Title</label>
+    <input type="text" class="form-control" id="takeNote"/>
+  
+</div>
+<div class="mt-4">
+    <label for="exampleFormControlTextarea1" class="form-label">Take a Note</label>
+    <textarea class="form-control" id="description" rows="3"></textarea>
+</div>
+  <br/>
+  <a href="#" id="btnAddNote" class="btn btn-warning a-btn-slide-text">
+    <span><strong>Save</strong></span>            
+</a>
+</div>
+<br/>
+
+<div class="container" id="notes" style="display: flex; padding: 30px;">
+    <!-- <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text"></p>
+          <h6 class="card-subtitle mb-2 text-muted">Note</h6>
+          <button  class="btn btn-primary a-btn-slide-text">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <span><strong>Edit</strong></span>            
+          </button>
+        
+        <a href="#" class="btn btn-warning a-btn-slide-text">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+            <span><strong>Delete</strong></span>            
+        </a>
+        
+        </div>
+      </div> -->
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

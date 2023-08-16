@@ -1,0 +1,9 @@
+a{
+    color: black;
+}
+ .FormBorder
+{
+    border: 2px red;
+} 
+.card
+{display: flex;}
